@@ -17,12 +17,21 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float directionX = Input.GetAxisRaw("Horizontal");
-        playerDirection = new Vector2(directionX, 0).normalized;
-    }
+        
+        
+            float directionX = Input.GetAxisRaw("Horizontal");
+            playerDirection = new Vector2(directionX, 0).normalized;
 
+        }
+    
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(playerDirection.x * playerSpeed , 0);
+        
+        
+        rb.velocity = new Vector2(playerDirection.x * playerSpeed,0);
+        
+
+        
+        
     }
 }

@@ -6,10 +6,11 @@ public class FollowPlayer : MonoBehaviour
 {
     public Transform player;
     public Vector3 offset;
+    public Camera mainCamera;
 
 
     void Update()
     {
-        transform.position = player.position + offset;
+            mainCamera.transform.position = player.position + offset;       
     }
 }
